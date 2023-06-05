@@ -127,13 +127,23 @@ body {
 }
 
 .trendy-posts {
+    display: grid;
+    max-width: 100%;
+    grid-template: repeat(1, 320px) / repeat(4, auto);
+    grid-gap: 4px;
+}
+
+
+
+/*
+.trendy-posts {
     display: flex;
     flex-wrap: wrap;
-}
+}*/
 
 .trendy-post {
     position: relative;
-    display: flex;
+    display: grid;
     box-sizing: border-box;
     align-items: flex-end;
     background-size: cover;
@@ -611,19 +621,6 @@ body {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.sns-link-dribbble {
-    background-image: url(../svg/001-dribbble.svg);
-}
-
-.sns-link-pinterest {
-    background-image: url(../svg/001-pinterest.svg);
-}
-
-.sns-link-twitter {
-    background-image: url(../svg/003-tumblr.svg);
-}
-
-
 .copyright {
     color: #999999;
     font-size: 12px;
@@ -638,8 +635,7 @@ body {
 .copyright-link:hover {
     font-size: 13px;
 }
-
-
+*/
 .popup {
     position: fixed;
     width: 100%;

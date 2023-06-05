@@ -42,7 +42,10 @@ body {
     font-size: 20px;
 }
 
-/*Тренды*/
+.menu-items {
+    display: none;
+}
+
 
 .trendy-posts {
     margin-bottom: 60px;
@@ -50,10 +53,8 @@ body {
 
 .trendy-post {
     min-height: 320px;
-    width: calc(25% - 3px);
 }
 
-/*Главная часть сайта (посты)*/
 
 .page {
     display: flex;
@@ -75,7 +76,6 @@ body {
     width: calc(381 * 100% / 780);
 }
 
-/*Блок "Наши изделия" */
 
 .goods-item {
     width: calc((100% / 3) - 42px);
@@ -86,7 +86,6 @@ body {
     margin-left: 0;
 }
 
-/* Pop-up */
 
 .popup-body {
     padding: 25px 15px 15px;

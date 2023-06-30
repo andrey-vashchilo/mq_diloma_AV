@@ -130,7 +130,7 @@ body {
 .trendy-posts {
     display: grid;
     max-width: 100%;
-    grid-template: repeat(1, auto) / repeat(1, auto);
+    grid-template: repeat(1, auto) / repeat(4, auto);
     grid-gap: px;
 }
 

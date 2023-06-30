@@ -130,8 +130,8 @@ body {
 .trendy-posts {
     display: grid;
     max-width: 100%;
-    grid-template: repeat(1, auto) / repeat(4, auto);
-    /*grid-gap: 2px;*/
+    grid-template: repeat(1, auto) / repeat(1, auto);
+    grid-gap: px;
 }
 
 
@@ -241,7 +241,7 @@ body {
 .post-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     margin-top: 4px;
     /*margin-bottom: 24px;*/
@@ -386,7 +386,7 @@ body {
 }
 
 .sidebar-part {
-   margin-top: 55px;
+   margin-top: 56px;
 }
 .search-group {
     flex-grow: 1;
@@ -775,17 +775,17 @@ body {
   /*desktop*/
 
   @media (min-width: 1200px) {
-        body {
+    body {
         font-size: 15px;
         line-height: 22px;
-        }
+    }
 
 
     .welcome {
         background-image: url(../images/banner-bg.jpg);
         padding-top: 25px;
         padding-bottom: 109px;
-        }
+    }
 
     .info-container { 
         max-width: 1200px;
@@ -793,123 +793,125 @@ body {
         padding-right: 15px;
        /* margin: 0 auto;*/
         /*margin-top: 90px;*/
-        }
+    }
 
     .header-logo {
         width: 180px;
-        }
+    }
 
     .menu-button {
         display: none;
-        }
+    }
 
     .welcome-title-container {
         margin-top: 101px;
         width: 679px;
-        }
+    }
 
-.tagy {
-    margin-bottom: 23px;
-}
+    .tagy {
+        margin-bottom: 23px;
+    }
 
-.bobo {
-    margin-top: 47px;
-}
+    .bobo {
+        margin-top: 47px;
+    }
 
     .welcome-title {
         font-size: 45px;
         line-height: 75px;
-        }
+    }
 
     .mtitle-group {
         font-size: 14px;
-        }
-
-
+    }
 
     .title-group {
         font-size: 20px;
-        }
+    }
 
     .menu-items {
         display: none;
-        }
+    }
 
 
     .trendy-posts {
         margin-bottom: 60px;
-        }
+    }
 
     .trendy-post {
         min-height: 320px;
-        }
+    }
 
 
     .page {
         display: flex;
         justify-content: space-between;
         margin-bottom: 65px;
-        }
+    }
 
     .news {
         width: 780px;
-        }
+    }
 
     .new-post {
         display: flex;
         justify-content: space-between;
-        }
+    }
 
     .post-img-container {
         margin-right: 30px;
         width: calc(381 * 100% / 780);
-        }
+    }
 
 
     .goods-item {
         width: calc((100% / 3) - 42px);
         margin-left: 63px;
-        }
+    }
 
     .goods-item:first-child {
         margin-left: 0;
-        }
+    }
 
 
     .popup-body {
         padding: 25px 15px 15px;
-        }
+    }
 
     .popup-content {
         max-width: 392px;
         padding: 50px 30px 53px;
-        }
+    }
 
     .radio-group-text::before {
         width: 18px;
         height: 18px;
         background-size: 18px;
-        }
+    }
 
     .popup-close {
         width: 19px;
         height: 19px;
         background-size: 19px;
-        top: -29px;
-        }
-
-
+        top: -14px;
+    }
 }
 
 /*tablet*/
 
 @media (min-width: 641px) and (max-width: 1199px) {
-        body {
-        font-size: 17px;
+    body {
         line-height: 22px;
-
     }
 
+    .post-preview {
+        padding: 10px 33px 29px 33px;
+    }
+
+    .post-title {
+        font-size: 17px;
+        line-height: 22px;
+    }
 
     .welcome {
         padding-top: 45px;
@@ -920,16 +922,17 @@ body {
     .info-container {
         padding-left: 35px;
         padding-right: 35px;
+        margin-top: 13px;
     }
 
     .header-logo {
         width: 158px;
+        margin-top: -38px;
     }
 
     .menu-list {
         display: none;
     }
-
 
     .menu-button {
         display: flex;
@@ -937,27 +940,14 @@ body {
         align-items: center;
         margin-top: 20px;
         margin-right: 20px;
-      }
+    }
 
-      .menu-items {
-        width: 1.4em;
-        height: 1em;
-        border: none;
-        padding: 0;
-        background-color: transparent;
-        font-size: 25px;
-        position: relative;
-        text-indent: -9999px;
-        cursor: pointer;
-      }
-
-      .menu-items::before {
+    .menu-items::before {
         top: 0;
-      }
+    }
 
-
-      .menu-items::after,
-      .menu-items::before {
+    .menu-items::after,
+    .menu-items::before {
         content: "";
         width: 100%;
         height: 20%;
@@ -965,9 +955,9 @@ body {
         background-color: #ffffff;
         position: absolute;
         left: 0;
-      }
+    }
 
-      .button-item {
+    .button-item {
         width: 100%;
         height: 20%;
         margin-top: -0.1em;
@@ -976,17 +966,17 @@ body {
         position: absolute;
         left: 0;
         top: 50%;
-      }
+    }
 
-      .menu-button {
+    .menu-button {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         margin-top: 10px;
         margin-right: 20px;
-      }
+    }
 
-      .menu-items {
+    .menu-items {
         width: 1.4em;
         height: 1em;
         border: none;
@@ -996,14 +986,22 @@ body {
         position: relative;
         text-indent: -9999px;
         cursor: pointer;
-      }
+    }
+    
+    .side-new-post:nth-child(n+2) {
+      margin-top: 21px;
+    }
 
-      .menu-items::before {
+    .menu-items::before {
         top: 0;
-      }
+    }
 
-      .menu-items::after,
-      .menu-items::before {
+    .search {
+        margin-top: 64px;
+    }
+
+    .menu-items::after,
+    .menu-items::before {
         content: "";
         width: 100%;
         height: 20%;
@@ -1011,9 +1009,9 @@ body {
         background-color: #ffffff;
         position: absolute;
         left: 0;
-      }
+    }
 
-      .button-item {
+    .button-item {
         width: 100%;
         height: 20%;
         margin-top: -0.1em;
@@ -1022,39 +1020,49 @@ body {
         position: absolute;
         left: 0;
         top: 50%;
-      }
+    }
 
-      .menu-items:after {
+    .menu-items:after {
         bottom: 0;
-      }
+    }
 
     .welcome-title-container {
-        margin-top: 101px;
+        margin-top: 87px;
         width: 604px;
     }
 
     .welcome-title {
         font-size: 40px;
         line-height: 55px;
+        margin-bottom: -23px;
     }
 
     .mtitle-group {
+        margin-bottom: 18px;
         font-size: 14px;
+       
     }
 
     .title-group {
         font-size: 18px;
     }
 
+    .goods-title {
+        margin-bottom: -12px;
+    }
 
     .trendy-posts {
-        margin-bottom: 50px;
+        margin-bottom: 46px;
         grid-template: repeat(2, auto) / repeat(2, auto);
     }
 
     .trendy-post {
         min-height: 247px;
         margin-top: 4px;
+    }
+
+    .post-img-container {
+        margin-bottom: -8px;
     }
 
     .trendy-post:nth-child(-n + 2) {
@@ -1066,14 +1074,49 @@ body {
     }
 
     .tags-list {
-        margin-top: 12px;
+        margin-top: 20px;
     }
 
+    .post-name {
+        font-size: 17px;
+    }
+
+    .scr {
+        margin-top: 22px;
+    }
+
+    .subscribtion {
+        margin-bottom: 6px;
+    }
+
+    .bobo {
+        margin-top: 50px;
+    }
+
+    .side-topics {
+        line-height: 2.4;
+    }
+
+    .post-preview-title {
+        padding: 50px 20px 25px;
+    }
+
+    .title-group-products {
+        margin-bottom: 29px;
+    }
+
+    /*.post-info {
+        margin-top: 28px;*/
 
     .page {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 55px;
+        margin-bottom: 44px;
+    }
+
+    .post-txt {
+        margin-top: 21px;
+        font-size: 15px;
     }
 
     .news {
@@ -1084,8 +1127,12 @@ body {
         border-bottom: 3px solid #eeeeee;
     }
 
-    .new-post:last-child {
+    /*.new-post:last-child {
         border-bottom: none;
+    }*/
+
+    .new-post:nth-child(n+2) {
+        margin-top: 42px;
     }
 
     .post-img {
@@ -1095,6 +1142,19 @@ body {
 
     .side-bar {
         margin-left: 20px;
+    }
+
+    .side-bar-news {
+        margin-top: 28px;
+    }
+
+    .new-sidepost-preview {
+        margin-top: -7px;
+
+    }
+    
+    .new-sidepost-img-container {
+        margin-top: 0px;
     }
 
 
@@ -1107,10 +1167,21 @@ body {
         margin-top: 0;
     }
 
+    .price {
+        margin-top: 17px;
+    }
+
     .goods-item:nth-child(even) {
         margin-left: 22px;
     }
 
+    .footer {
+        margin-top: 60px;
+    }
+
+    .sns-container {
+        margin-bottom: 42px;
+    }
 
     .popup-body {
         padding: 25px 15px 15px;
@@ -1131,7 +1202,7 @@ body {
         width: 28px;
         height: 28px;
         background-size: 28px;
-        top: -38px;
+        top: -17px;
     }
 
 
@@ -1150,9 +1221,9 @@ body {
 /*mobile*/
 
 @media  (max-width: 640px) {
-     body {
-        font-size: 16px;
-        line-height: 20px;
+    body {
+        font-size: 14px;
+        line-height: 25px;
         margin: 0;
         padding: 0;
     }
@@ -1161,8 +1232,8 @@ body {
         box-sizing: border-box;
         background-image: url(../images/banner-mobile.jpg);
         height: 636px;
-        padding-top: 30px;
-        
+        padding-top: 63px;
+        margin-bottom: 43px;
     }
 
     .container {
@@ -1179,7 +1250,8 @@ body {
     }
 
     .header-logo {
-        width: 269px;
+         width: 269px;
+        margin-top: -153px;
     }
 
     .menu-list {
@@ -1188,7 +1260,7 @@ body {
 
     .menu-items::before {
         top: 0;
-      }
+    }
 
     .menu-items::after,
     .menu-items::before {
@@ -1199,7 +1271,7 @@ body {
         background-color: #ffffff;
         position: absolute;
         left: 0;
-      }
+    }
 
     .button-item {
         width: 100%;
@@ -1210,15 +1282,15 @@ body {
         position: absolute;
         left: 0;
         top: 50%;
-      }
+    }
 
-      .menu-button {
+    .menu-button {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-      }
+    }
 
-      .menu-items {
+    .menu-items {
         width: 1.4em;
         height: 1em;
         border: none;
@@ -1229,14 +1301,14 @@ body {
         text-indent: -9999px;
         cursor: pointer;
         right: 16px;
-      }
+    }
 
-      .menu-items::before {
+    .menu-items::before {
         top: 0;
-      }
+    }
 
-      .menu-items::after,
-      .menu-items::before {
+    .menu-items::after,
+    .menu-items::before {
         content: "";
         width: 100%;
         height: 20%;
@@ -1244,9 +1316,9 @@ body {
         background-color: #ffffff;
         position: absolute;
         left: 0;
-      }
+    }
 
-      .button-item {
+    .button-item {
         width: 100%;
         height: 20%;
         margin-top: -0.1em;
@@ -1255,45 +1327,98 @@ body {
         position: absolute;
         left: 0;
         top: 50%;
-      }
+    }
 
-      .menu-items:after {
+    .menu-items:after {
         bottom: 0;
-      }
+    }
 
     .welcome-title-container {
-        margin-top: 40px;
+        margin-top: -57px;
         width: 277px;
+        padding-bottom: 79px;
     }
 
     .welcome-title {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 36px;
     }
 
     .mtitle-group, .title-group {
         font-size: 16px;
     }
-
+    
+    .mtitle-group {
+        margin-bottom: 19px; 
+    }
+    
+    .tagy {
+        margin-top: -24px;
+    }
+    
     .trendy-posts {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        max-width: 100%;
+        grid-template: repeat(1, auto) / repeat(1, auto);
         margin-bottom: 40px;
     }
 
     .trendy-post {
         width: 100%;
-        min-height: 233px;
+        min-height: 230px;
         margin-top: 4px;
         margin-left: 0;
     }
+    
+    .trendy-post-preview {
+        box-sizing: border-box;
+        width: 100%;
+        z-index: 1;
+        padding: 14px 19px 29px 19px;
+    }
 
     .trendy-post:first-child {
-        margin-top: 0;
+        /*! margin-top: 0; */
+    }
+    
+    .post-title {
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .goods-title-txt {
+        margin-bottom: 0px;
+    }
+
+    .info-container {
+        margin-left: auto; 
+        margin-right: auto; 
+        /* margin-top: 35px; */
+        padding-right: 15px;
+        padding-left: 15px;  
+    }
+
+    .bobo {
+        margin-top: 10px;
     }
 
     .tags-list {
-        margin-top: 12px;
+        margin-top: 5px;
+    }
+
+    .post-name {
+        font-size: 16px;
+    }
+
+    .post-info {
+    margin-top: 12px;
+    }
+
+    .post-txt {
+    margin-top: -5px;
+    line-height: 19px;
+    font-size: 14px;
     }
 
     .news {
@@ -1303,6 +1428,11 @@ body {
 
     .new-post {
         border-bottom: 3px solid #eeeeee;
+        padding-bottom: 5px;
+    }
+
+    .new-post:nth-child(n+2) {
+        margin-top: 32px;
     }
 
     .post-img {
@@ -1313,10 +1443,58 @@ body {
         width: 100%;
         margin-bottom: 45px;
     }
+    .side-new-post:nth-child(n+2) {
+        margin-top: 14px;
+    }
 
+    .side-bar-part {
+    margin-bottom: 62px;
+    }
+
+    .sidebar-part-newsletter {
+        margin-top: 38px;
+    }
+
+    .scr {
+        margin-top: 20px;
+    }
+
+    .side-topic:nth-child(n+2) {
+        margin-top: 17px;
+    }
+    
+    .title-group-products {
+        margin-bottom: 37px;  
+    }
+
+    .post-title-txt {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .goods-txt-p {
+        margin-top: 3px;
+    }
+
+    .goods-txt-p2 {
+        margin-top: -12px;
+    }
+
+    .item-new-price {
+    margin-top: 5px;
+    }
 
     .goods-item {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .footer {
+        margin-top: 21px;
+    }
+
+    .sns-container {
+        margin-bottom: 41px;
     }
 
     .popup-body {
@@ -1343,15 +1521,15 @@ body {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-        .trendy-post {
-           width: calc(50% - 2px);
-        }
+    .trendy-post {
+        width: calc(50% - 2px);
+    }
 
-        .trendy-post:nth-child(even) {
-            margin-left: 4px;
-        }
+    .trendy-post:nth-child(even) {
+        margin-left: 4px;
+    }
 
-        .trendy-post:nth-child(2) {
-            margin-top: 0;
-        }
+    .trendy-post:nth-child(2) {
+        margin-top: 0;
+    }
 }

@@ -332,14 +332,14 @@
             </button>
           </form>
 
-          <section class="sidebar-part">
+          <section class="sidebar-part sidebar-part-newsletter">
             <h2 class="mtitle-group">Рассылка</h2>
             <form class="subscribtion">
               <label class="subs-group">
                 <span class="field-label">Это форма подписки на новости нашего сайта.</span>
                 <input class="field" type="email" name="email" placeholder="Ваш email-адрес" required>
               </label>
-              <button class="button subscr-button">Подписаться</button>
+              <button class="button subscr-button button scr">Подписаться</button>
             </form>
           </section>
 
@@ -410,7 +410,7 @@
 
           <section class="info-container">
 
-            <h2 class="mtitle-group title-group">Наши изделия</h2>
+            <h2 class="mtitle-group title-group title-group-products">Наши изделия</h2>
             <div class="our-goods">
 
               <article class="goods-item">
@@ -422,10 +422,10 @@
                     <img class="goods-item-img" src="images/shop-item-desk1.jpg" alt="Подушка на диван">
                   </picture>
                 </div>
-                <div class="post-preview goods-preview">
-                  <h3 class="post-title goods-title"><a class="post-link goods-title-link" href="#0">Подушки на диван</a></h3>
+                <div class="post-preview goods-preview post-preview-title">
+                  <h3 class="post-title post-title-txt goods-title"><a class="post-link goods-title-link" href="#0">Подушки на диван</a></h3>
                   <div class="goods-txt">
-                    <p>Набор из двух подушек с модными принтами. Видео о создании <a class="goods-txt-link" href="#0">здесь</a>.</p>
+                    <p class="goods-txt-p">Набор из двух подушек с модными принтами. Видео о создании <a class="goods-txt-link" href="#0">здесь</a>.</p>
                   </div>
                   <div class="goods-footer">
                     <div class="goods-prices">
@@ -446,14 +446,14 @@
                     <img class="goods-item-img" src="images/shop-item-desk2.jpg" alt="Кукла Зайчик">
                   </picture>
                 </div>
-                <div class="post-preview goods-preview">
+                <div class="post-preview goods-preview post-preview-title">
                   <h3 class="post-title goods-title"><a class="post-link goods-title-link" href="#0">Кукла "Зайчик"</a></h3>
                   <div class="goods-txt">
-                    <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="goods-txt-link" href="#0">весенняя серия постов </a>в блоге и несколько подкастов.</p>
+                    <p class="goods-txt-p2">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="goods-txt-link" href="#0">весенняя серия постов </a>в блоге и несколько подкастов.</p>
                   </div>
                   <div class="goods-footer">
                     <div class="goods-prices">
-                      <span class="goods-item-price item-new-price">3500 Р</span>
+                      <span class="goods-item-price item-new-price price">3500 Р</span>
                     </div>
                     <button class="button goods-button" type="button">В магазин</button>
                   </div>
@@ -469,10 +469,10 @@
                     <img class="goods-item-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
                   </picture>
                 </div>
-                <div class="post-preview goods-preview">
-                  <h3 class="post-title goods-title"><a class="post-link goods-title-link" href="#0">Шестиугольная рамка</a></h3>
+                <div class="post-preview goods-preview post-preview-title">
+                  <h3 class="post-title goods-title goods-title-txt"><a class="post-link goods-title-link" href="#0">Шестиугольная рамка</a></h3>
                   <div class="goods-txt">
-                    <p>Необычная рамка для украшения дома из видео <a class="goods-txt-link" href="#0">«Как сделать рамку из подручных средств за 30 минут» </a>.</p>
+                    <p class="goods-txt-p">Необычная рамка для украшения дома из видео <a class="goods-txt-link" href="#0">«Как сделать рамку из подручных средств за 30 минут» </a>.</p>
                   </div>
                   <div class="goods-footer">
                     <div class="goods-prices">
@@ -596,7 +596,6 @@
               </li>
             </ul>
           </address>
-
           <div class="copyright">
             <a class="copyright-link" href="#0">Copyright &copy; 2009-2019 City Blog LLC.</a>
           </div>
@@ -648,8 +647,9 @@
             </div>
           </form>
 
-              <svg class="popup-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441"><path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg>
-             <button class="popup-close">Закрыть</button>
+         <button class="popup-close" type="button"> <svg class="popup-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
+          <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/>
+        </svg>закрыть</button> 
         </div>
       </div>
     </div>
